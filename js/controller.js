@@ -8,7 +8,8 @@ import {
     displayButton,
     buttonLeft,
     buttonRight,
-    buttonCenter
+    buttonCenter,
+    loading
 } from "./ui.js"
 
 
@@ -16,6 +17,7 @@ const next = goNext();
 const previous = goPrevious();
 
 export const homePage = () => {
+    loading()
     let id = 1;
     fetchAllCharacters(id, renderAllCharacters);
     displayButton();

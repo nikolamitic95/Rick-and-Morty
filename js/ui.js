@@ -3,6 +3,11 @@ export const goPrevious = () => $(".previous");
 export const buttonLeft = () => document.querySelector(".but1>a");
 export const buttonRight = () => document.querySelector(".but3>a");
 export const buttonCenter = () => document.querySelector(".but2>a");
+const $loading = document.querySelector(".loading")
+
+
+
+//*****     HomePage     *****//
 
 export const renderAllCharacters = (data) => {
 
@@ -36,7 +41,10 @@ export const renderAllCharacters = (data) => {
     $(".btn-outline-success").on("click", function () {
         $(this).toggleClass("active");
     })
+    $loading.className="none"
 }
+
+//*****     Pagination     *****//
 
 export const pagination = (counter) => {
     let button = document.querySelector(".but1>a");
@@ -68,6 +76,8 @@ export const displayButton = () => {
     let button = document.querySelector(".but1>a");
     button.style.display = "none";
 }
+
+//*****     AboutPage     *****//
 
 export const renderSingleCharacter = (data) => {
     const $name = document.createElement("h4");
@@ -135,4 +145,23 @@ export const renderSingleCharacter = (data) => {
     $div.appendChild($div1);
     $div.appendChild($ul);
 
+    $loading.className="none"
+}
+
+/*******************    Loading     *******************/
+
+export const loading = () => {
+
+    $loading.innerHTML =
+        ` <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+</div>`;
 }
