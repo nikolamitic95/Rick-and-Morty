@@ -80,6 +80,7 @@ export const homePage = () => {
 }
 
 export const singlePage = () => {
+    loading()
     const id = window.location.search.slice(2);
     fetchSingleCharacter(id, renderSingleCharacter)
 }
