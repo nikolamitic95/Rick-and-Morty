@@ -25,7 +25,7 @@ export const renderAllCharacters = (data) => {
         $img +=
 
             `<div class="col" lg-4>
-            <a href="profile.html?=${this.id}" target="_blank">
+            <a href="profile.html?=${this.id}">
                <div class="card" style="width: 18rem;">
                 <img src="${this.image}" class="card-img-top" alt="...">
                  <div class="card-body">
