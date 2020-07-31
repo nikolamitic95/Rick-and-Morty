@@ -7,4 +7,4 @@ DEMO: [Rick and Morty](https://nikolamitic95.github.io/Rick-and-Morty/home.html)
 ## Stack 
 
 * Language: HTML5, CSS3, JS(ES6+)
-* Library: Bootstrap, SASS
+* Library: Bootstrap, SASS, jQuery
